@@ -13,10 +13,10 @@ export default function EventPage() {
             <div className="row">
                 <div className="col-3">
                 </div>
-                <div className={"col-5"}>
+                <div className={"col-6"}>
                     <EventMiddleComponent eventTabIndex={eventTabIndex}/>
                 </div>
-                <div className={"col-4"}>
+                <div className={"col-3"}>
                 </div>
             </div>
         </div>

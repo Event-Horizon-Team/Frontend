@@ -26,6 +26,7 @@ export default function LeftTabs({ eventTabIndex, setEventTabIndex }) {
                 >
                     <Tab label="About" value={0}/>
                     <Tab label="Announcements" value={1}/>
+                    <Tab label="Tickets" value={2}/>
                 </Tabs>
             </Box>
         </div>
