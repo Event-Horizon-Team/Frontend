@@ -13,12 +13,9 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
+    backgroundColor: 'background.paper',
+    borderRadius: '10px',
     boxShadow: 24,
-    // pt: 2,
-    // px: 4,
-    pb: 3,
 };
 
 export default function TicketBuyingModal() {
@@ -40,32 +37,27 @@ export default function TicketBuyingModal() {
                 aria-labelledby="parent-modal-title"
                 aria-describedby="parent-modal-description"
             >
+
                 <Box sx={{...style, width: 600, height: 300}}>
                     <div className={"container container-fluid bg-primary pb-1 d-flex align-items-center"}>
-                        <button className={"modal-close-button text-light fw-bold"} onClick={handleClose}> X </button>
+                        <button className={"modal-close-button text-light fw-bold"} onClick={handleClose}> X
+                        </button>
                         <h1 className={"text-light"}>Ticket Buying Transaction</h1>
                     </div>
-                    <div className={"m-2 modal-body"}>
-                        <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
-                        <div className={"d-flex justify-content-between align-items-center"}>
 
-                            <div className={"justify-content-start align-items-center"}>
-                                <p className={"m-0 p-0 fs-4"}><span
-                                    className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
-                                <div className={"d-flex"}>
-                                    <p className={"fs-4 me-1"}><span
-                                        className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
-                                    <p className={"fs-4 ms-1"}><span
-                                        className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
-                                </div>
+                        <div className={"m-2 d-flex flex-column modal-body"}>
+                            <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
+                            <div className={"d-flex justify-content-between align-items-center"}>
+                                <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL}/>
+                                <TicketIncremental/>
                             </div>
-                            {/*<BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL} />*/}
-                            {/*<TicketIncremental/>*/}
+                            <div className={"flex-grow-1"}/>
+
+                            <div className={"d-flex justify-content-end"}>
+                                <button className={"btn btn-primary"}>Checkout</button>
+                            </div>
                         </div>
-                        <div className={"d-flex justify-content-end align-items-end my-modal-footer"}>
-                            <button className={"btn btn-primary"}>Checkout</button>
-                        </div>
-                    </div>
+
                 </Box>
             </Modal>
         </div>
