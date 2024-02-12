@@ -11,11 +11,11 @@ export default function BuyingInformation({ ticketInformationType}) {
     }
 
     return (
-        <div className={"justify-content-start container-fluid"}>
+        <div className={getSize("justify-content-start container-fluid border-start border-4 border-danger")}>
             <p className={"m-0 p-0"}><span className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
             <div className={"d-flex"}>
-                <p className={"me-1"}><span className={"fw-medium text-primary"}>Available:</span> 100</p>
-                <p className={"mx-1"}><span className={"fw-medium text-primary"}>My Tickets:</span> 100</p>
+                <p className={"me-1 mb-0"}><span className={"fw-medium text-primary"}>Available:</span> 100</p>
+                <p className={"mx-1 mb-0"}><span className={"fw-medium text-primary"}>My Tickets:</span> 100</p>
             </div>
         </div>
     )
