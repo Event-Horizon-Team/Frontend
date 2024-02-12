@@ -1,7 +1,7 @@
 import React from 'react';
 import {TicketInformationTypes} from "./TicketInformationTypes";
 
-export default function BuyingInformation({ ticketInformationType}) {
+export default function BuyingInformation({ ticketInformationType, children}) {
 
     const getSize = (s) => {
         if (ticketInformationType === TicketInformationTypes.IN_MODAL)
@@ -17,6 +17,7 @@ export default function BuyingInformation({ ticketInformationType}) {
                 <p className={"me-1 mb-0"}><span className={"fw-medium text-primary"}>Available:</span> 100</p>
                 <p className={"mx-1 mb-0"}><span className={"fw-medium text-primary"}>My Tickets:</span> 100</p>
             </div>
+            {children}
         </div>
     )
 }

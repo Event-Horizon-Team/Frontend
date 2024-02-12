@@ -49,15 +49,17 @@ export default function TicketBuyingModal() {
                             <img src={"https://i.ibb.co/drMM7TC/gggggg.jpg"} className={"buy-ticket-picture"}/>
                         </div>
                         <div className={"col-9"}>
-                        <div className={"my-2 me-2 d-flex flex-column modal-body"}>
+                        <div className={"my-2 me-2 d-flex flex-column my-modal-body"}>
                                 <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
                                 <div className={"d-flex justify-content-between align-items-center"}>
-                                    <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL}/>
+                                    <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL} >
+                                        michael
+                                    </BuyingInformation>
                                     <TicketIncremental/>
                                 </div>
-                                <div className={"flex-grow-1"}/>
+                                {/*<div className={"flex-grow-1"}/>*/}
 
-                                <div className={"d-flex justify-content-end border-top border-2 modal-border pt-2"}>
+                                <div className={"d-flex justify-content-end pt-2"}>
                                     <button className={"btn btn-primary"}>Checkout</button>
                                 </div>
                             </div>
