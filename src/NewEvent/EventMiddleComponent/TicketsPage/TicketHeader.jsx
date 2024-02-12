@@ -2,7 +2,6 @@ import React from 'react';
 import './Tickets.css';
 import BuyingInformation from "./BuyingInformation/TicketInformation/BuyingInformation";
 import {TicketInformationTypes} from "./BuyingInformation/TicketInformation/TicketInformationTypes";
-import TicketsModal from "../../../tickets/ticketsModal";
 import TicketBuyingModal from "./BuyingInformation/Modal/TicketBuyingModal";
 
 export default function TicketHeader() {
