@@ -2,6 +2,30 @@
     height: 100%;
 }
 
-.color-brown {
-    color: #8c0a0a;
+.modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+
+.modal-border {
+    border-color: #1e0064;
+}
+
+.incremental-button {
+    border-radius: 100%;
+    border: 1px solid black;
+    /*color: white;*/
+}
+
+.modal-body {
+    height: 220px;
+}
+
+.my-modal-footer {
+    height: 110px;
 }

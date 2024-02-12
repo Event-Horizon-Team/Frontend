@@ -2,7 +2,7 @@ import {Routes, Route} from "react-router-dom";
 import {BrowserRouter as Router} from "react-router-dom";
 
 import './App.css';
-import {RoutePathNames} from "./Routes/RoutePathNames";
+// import {RoutePathNames} from "./Routes/RoutePathNames";
 import EventPage from "./NewEvent/EventPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Utilities/Colors.css';
