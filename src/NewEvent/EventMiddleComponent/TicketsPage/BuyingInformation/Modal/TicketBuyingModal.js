@@ -8,6 +8,8 @@ import {TicketInformationTypes} from "../TicketInformation/TicketInformationType
 import BuyingInformation from "../TicketInformation/BuyingInformation";
 import './Modal.css'
 import TicketNumberView from "../TicketInformation/TicketNumberView";
+import ModalBody from "./ModalBody";
+import {ModalTypes} from "./ModalType";
 
 const style = {
     position: 'absolute',
@@ -21,8 +23,9 @@ const style = {
     height: 270
 };
 
-export default function TicketBuyingModal() {
+export default function TicketBuyingModal({ modalType }) {
 
+    const [numberOfBoughtTickets, setNumberOfBoughtTickets] = React.useState(1);
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(true);
@@ -33,7 +36,7 @@ export default function TicketBuyingModal() {
 
     return (
         <div>
-            <button className={"btn btn-primary m-1"} onClick={handleOpen}>Buy</button>
+            <button className={"btn btn-primary m-1"} onClick={handleOpen}> { modalType } </button>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -51,28 +54,17 @@ export default function TicketBuyingModal() {
                             <img src={"https://i.ibb.co/drMM7TC/gggggg.jpg"} className={"buy-ticket-picture"}/>
                         </div>
                         <div className={"col-9"}>
-                            <div className={"my-2 me-2 d-flex flex-column my-modal-body"}>
-                                <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
-                                <div className={"d-flex justify-content-between parent"}>
-                                    <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL}>
-                                        <p className={"mb-0"}><TicketNumberView isTotalPrice={true} attributeName={"Total Price: "} attributeValue={100} /></p>
-                                    </BuyingInformation>
-                                    <TicketIncremental/>
-                                </div>
-                            </div>
+                            <ModalBody
+                                numberOfBoughtTickets={numberOfBoughtTickets}
+                                setNumberOfBoughtTickets={setNumberOfBoughtTickets}/>
 
                             <div className={"child my-2 mx-3"}>
-                                <button className={"btn btn-primary"}>Checkout</button>
+                                <button className={"btn btn-primary"}> { modalType } </button>
                             </div>
                         </div>
                     </div>
-
                 </Box>
             </Modal>
         </div>
     );
-}
-
-
-{/*<div className={"flex-grow-1"}/>*/
 }

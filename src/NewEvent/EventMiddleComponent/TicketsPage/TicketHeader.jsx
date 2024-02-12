@@ -3,6 +3,7 @@ import './Tickets.css';
 import BuyingInformation from "./BuyingInformation/TicketInformation/BuyingInformation";
 import {TicketInformationTypes} from "./BuyingInformation/TicketInformation/TicketInformationTypes";
 import TicketBuyingModal from "./BuyingInformation/Modal/TicketBuyingModal";
+import {ModalTypes} from "./BuyingInformation/Modal/ModalType";
 
 export default function TicketHeader() {
     return (
@@ -19,8 +20,8 @@ export default function TicketHeader() {
                 <div className={"d-flex justify-content-between align-items-end pb-2 h-100"} >
                     <BuyingInformation ticketInformationType={TicketInformationTypes.IN_TICKET}/>
                     <div className={"d-flex justify-content-end align-items-end"}>
-                        <TicketBuyingModal />
-                        <button className={"btn btn-primary m-1"}>Refund</button>
+                        <TicketBuyingModal modalType={ModalTypes.BUY} />
+                        <TicketBuyingModal modalType={ModalTypes.REFUND} />
                     </div>
                 </div>
             </div>
