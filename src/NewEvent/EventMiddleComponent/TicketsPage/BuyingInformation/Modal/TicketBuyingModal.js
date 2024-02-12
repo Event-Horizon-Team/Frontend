@@ -49,18 +49,18 @@ export default function TicketBuyingModal() {
                         <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
                         <div className={"d-flex justify-content-between align-items-center"}>
 
-                            {/*<div className={"justify-content-start align-items-center"}>*/}
-                            {/*    <p className={"m-0 p-0 fs-4"}><span*/}
-                            {/*        className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>*/}
-                            {/*    <div className={"d-flex"}>*/}
-                            {/*        <p className={"fs-4 me-1"}><span*/}
-                            {/*            className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>*/}
-                            {/*        <p className={"fs-4 ms-1"}><span*/}
-                            {/*            className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
+                            <div className={"justify-content-start align-items-center"}>
+                                <p className={"m-0 p-0 fs-4"}><span
+                                    className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
+                                <div className={"d-flex"}>
+                                    <p className={"fs-4 me-1"}><span
+                                        className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
+                                    <p className={"fs-4 ms-1"}><span
+                                        className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
+                                </div>
+                            </div>
                             {/*<BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL} />*/}
-                            <TicketIncremental/>
+                            {/*<TicketIncremental/>*/}
                         </div>
                         <div className={"d-flex justify-content-end align-items-end my-modal-footer"}>
                             <button className={"btn btn-primary"}>Checkout</button>
