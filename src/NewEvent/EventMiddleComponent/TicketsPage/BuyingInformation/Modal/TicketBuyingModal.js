@@ -12,11 +12,11 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 600,
+    width: 800,
     backgroundColor: 'background.paper',
     borderRadius: '10px',
     boxShadow: 24,
-    height: 300
+    height: 270
 };
 
 export default function TicketBuyingModal() {
@@ -44,18 +44,26 @@ export default function TicketBuyingModal() {
                         </button>
                         <h1 className={"text-light"}>Ticket Buying Transaction</h1>
                     </div>
-                    <div className={"m-2 d-flex flex-column modal-body"}>
-                        <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
-                        <div className={"d-flex justify-content-between align-items-center"}>
-                            <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL}/>
-                            <TicketIncremental/>
+                    <div className={"row"}>
+                        <div className={"col-3 pe-0"}>
+                            <img src={"https://i.ibb.co/drMM7TC/gggggg.jpg"} className={"buy-ticket-picture"}/>
                         </div>
-                        <div className={"flex-grow-1"}/>
+                        <div className={"col-9"}>
+                        <div className={"my-2 me-2 d-flex flex-column modal-body"}>
+                                <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
+                                <div className={"d-flex justify-content-between align-items-center"}>
+                                    <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL}/>
+                                    <TicketIncremental/>
+                                </div>
+                                <div className={"flex-grow-1"}/>
 
-                        <div className={"d-flex justify-content-end"}>
-                            <button className={"btn btn-primary"}>Checkout</button>
+                                <div className={"d-flex justify-content-end border-top border-2 modal-border pt-2"}>
+                                    <button className={"btn btn-primary"}>Checkout</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </Box>
             </Modal>
         </div>
