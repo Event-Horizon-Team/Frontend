@@ -15,7 +15,7 @@ export default function TicketIncremental() {
     }
 
     return (
-        <div className={"d-flex justify-content-end align-items-center"}>
+        <div className={"d-flex justify-content-end align-items-center incremental"}>
             <button className={"btn"} onClick={goDown} disabled={value === 1}><ArrowDropDownIcon className={"fs-6"}/>
             </button>
             <span className={"mx-2"}>{value}</span>

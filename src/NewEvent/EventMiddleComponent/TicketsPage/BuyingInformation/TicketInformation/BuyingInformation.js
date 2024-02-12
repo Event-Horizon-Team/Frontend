@@ -1,5 +1,6 @@
 import React from 'react';
 import {TicketInformationTypes} from "./TicketInformationTypes";
+import TicketNumberView from "./TicketNumberView";
 
 export default function BuyingInformation({ ticketInformationType, children}) {
 
@@ -12,10 +13,10 @@ export default function BuyingInformation({ ticketInformationType, children}) {
 
     return (
         <div className={getSize("justify-content-start container-fluid border-start border-4 border-danger")}>
-            <p className={"m-0 p-0"}><span className={"fw-medium text-primary"}>Price:</span> 100 EGP</p>
+            <p className={"m-0 p-0"}><TicketNumberView attributeName={"Price: "} attributeValue={100}/></p>
             <div className={"d-flex"}>
-                <p className={"me-1 mb-0"}><span className={"fw-medium text-primary"}>Available:</span> 100</p>
-                <p className={"mx-1 mb-0"}><span className={"fw-medium text-primary"}>My Tickets:</span> 100</p>
+                <p className={"me-1 mb-0"}><TicketNumberView attributeName={"Available: "} attributeValue={100}/></p>
+                <p className={"mx-1 mb-0"}><TicketNumberView attributeName={"My Tickets: "} attributeValue={100} /></p>
             </div>
             {children}
         </div>

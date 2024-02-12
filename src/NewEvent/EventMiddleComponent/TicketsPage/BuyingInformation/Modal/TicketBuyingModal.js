@@ -6,6 +6,8 @@ import TicketIncremental from "./TicketIncremental";
 import '../BuyingInformation.css';
 import {TicketInformationTypes} from "../TicketInformation/TicketInformationTypes";
 import BuyingInformation from "../TicketInformation/BuyingInformation";
+import './Modal.css'
+import TicketNumberView from "../TicketInformation/TicketNumberView";
 
 const style = {
     position: 'absolute',
@@ -49,19 +51,18 @@ export default function TicketBuyingModal() {
                             <img src={"https://i.ibb.co/drMM7TC/gggggg.jpg"} className={"buy-ticket-picture"}/>
                         </div>
                         <div className={"col-9"}>
-                        <div className={"my-2 me-2 d-flex flex-column my-modal-body"}>
+                            <div className={"my-2 me-2 d-flex flex-column my-modal-body"}>
                                 <h2 className={"display-5 border-bottom border-2 modal-border me-1"}>Ticket Title</h2>
-                                <div className={"d-flex justify-content-between align-items-center"}>
-                                    <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL} >
-                                        michael
+                                <div className={"d-flex justify-content-between parent"}>
+                                    <BuyingInformation ticketInformationType={TicketInformationTypes.IN_MODAL}>
+                                        <p className={"mb-0"}><TicketNumberView isTotalPrice={true} attributeName={"Total Price: "} attributeValue={100} /></p>
                                     </BuyingInformation>
                                     <TicketIncremental/>
                                 </div>
-                                {/*<div className={"flex-grow-1"}/>*/}
+                            </div>
 
-                                <div className={"d-flex justify-content-end pt-2"}>
-                                    <button className={"btn btn-primary"}>Checkout</button>
-                                </div>
+                            <div className={"child my-2 mx-3"}>
+                                <button className={"btn btn-primary"}>Checkout</button>
                             </div>
                         </div>
                     </div>
@@ -70,4 +71,8 @@ export default function TicketBuyingModal() {
             </Modal>
         </div>
     );
+}
+
+
+{/*<div className={"flex-grow-1"}/>*/
 }

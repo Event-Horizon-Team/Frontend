@@ -31,3 +31,13 @@
     height: 211px;
     border-bottom-left-radius: 10px;
 }
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
