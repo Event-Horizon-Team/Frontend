@@ -4,9 +4,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import {usePageSizeAndTabIndex} from "../../EventPage";
 
-export default function LeftTabs({ eventTabIndex, setEventTabIndex }) {
+export default function LeftTabs() {
 
-    const { setMiddlePageSize } = usePageSizeAndTabIndex();
+    const { eventTabIndex, setEventTabIndex, setMiddlePageSize } = usePageSizeAndTabIndex();
 
     const handleChange = (event, newValue) => {
         setEventTabIndex(newValue);

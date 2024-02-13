@@ -17,8 +17,8 @@ export default function EventPage() {
 
     return (
         <div>
-            <PageSizeAndTabIndexContext.Provider value={{ setMiddlePageSize }}>
-                <EventUpperComponent eventTabIndex={eventTabIndex} setEventTabIndex={setEventTabIndex} />
+            <PageSizeAndTabIndexContext.Provider value={{ eventTabIndex, setEventTabIndex, setMiddlePageSize }}>
+                <EventUpperComponent />
             </PageSizeAndTabIndexContext.Provider>
             <div className="row">
                 <div className={getColNumber(0)}></div>

@@ -4,7 +4,7 @@ import EventPicture from "./EventPicture";
 import EventDataInUpperComponent from "./EventDataInUpperComponent";
 import ButtonsRow from "./ButtonsRow/ButtonsRow";
 
-export default function EventUpperComponent({ eventTabIndex, setEventTabIndex }) {
+export default function EventUpperComponent() {
 
     return (
         <div className={"event-page-upper-container pb-3"}>
@@ -13,7 +13,7 @@ export default function EventUpperComponent({ eventTabIndex, setEventTabIndex })
                 <div className={"col-1"} />
                 <div className={"col-11"}>
                     <EventDataInUpperComponent/>
-                    <ButtonsRow eventTabIndex={eventTabIndex} setEventTabIndex={setEventTabIndex}/>
+                    <ButtonsRow />
                 </div>
             </div>
         </div>
