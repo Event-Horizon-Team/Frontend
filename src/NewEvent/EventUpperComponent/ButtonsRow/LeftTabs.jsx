@@ -2,11 +2,16 @@ import React from 'react';
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import {usePageSizeAndTabIndex} from "../../EventPage";
 
 export default function LeftTabs({ eventTabIndex, setEventTabIndex }) {
 
+    const { setMiddlePageSize } = usePageSizeAndTabIndex();
+
     const handleChange = (event, newValue) => {
         setEventTabIndex(newValue);
+        if (newValue === 2) setMiddlePageSize(6);
+        else setMiddlePageSize(5);
     };
 
     return (

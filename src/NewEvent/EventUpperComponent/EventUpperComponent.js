@@ -12,11 +12,8 @@ export default function EventUpperComponent({ eventTabIndex, setEventTabIndex })
             <div className={"row"} >
                 <div className={"col-1"} />
                 <div className={"col-11"}>
-
-                    {/*<div className={"ms-3"}>*/}
                     <EventDataInUpperComponent/>
                     <ButtonsRow eventTabIndex={eventTabIndex} setEventTabIndex={setEventTabIndex}/>
-                    {/*</div>*/}
                 </div>
             </div>
         </div>
