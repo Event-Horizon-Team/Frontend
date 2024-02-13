@@ -2,14 +2,8 @@ import React from 'react';
 
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
-import TicketIncremental from "./TicketIncremental";
-import '../TicketInformation/BuyingInformation.css';
-import {TicketInformationTypes} from "../TicketInformation/TicketInformationTypes";
-import BuyingInformation from "../TicketInformation/BuyingInformation";
 import './Modal.css'
-import TicketNumberView from "../TicketInformation/TicketNumberView";
 import ModalBody from "./ModalBody";
-import {ModalTypes} from "./ModalType";
 
 const style = {
     position: 'absolute',
@@ -32,6 +26,7 @@ export default function TicketBuyingModal({ modalType }) {
     };
     const handleClose = () => {
         setOpen(false);
+        setNumberOfBoughtTickets(1)
     };
 
     return (
@@ -58,7 +53,7 @@ export default function TicketBuyingModal({ modalType }) {
                                 numberOfBoughtTickets={numberOfBoughtTickets}
                                 setNumberOfBoughtTickets={setNumberOfBoughtTickets}/>
 
-                            <div className={"child my-2 mx-3"}>
+                            <div className={"my-2 mx-3 modal-bottom-right-button"}>
                                 <button className={"btn btn-primary"}> { modalType } </button>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ import {ModalTypes} from "./Modal/ModalType";
 
 export default function TicketHeader() {
     return (
-        <div className={"row pe-1 background-white mb-2 ticket-header"}>
+        <div className={"row pe-1 background-white mb-2"}>
             <div className={"col-3 p-0"}>
                 <img src={"https://i.ibb.co/drMM7TC/gggggg.jpg"} className={"ticket-image"}/>
             </div>
