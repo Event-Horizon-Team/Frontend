@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import './EventUpperComponent/EventUpperComponent.css'
 import EventUpperComponent from "./EventUpperComponent/EventUpperComponent";
-import EventMiddleComponent from "./EventMiddleComponent/EventMiddleComponent";
+import EventMiddleComponent from "./EventMiddleComponent";
 
 export default function EventPage() {
 

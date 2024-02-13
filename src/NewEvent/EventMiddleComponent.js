@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Tickets from "./TicketsPage/Tickets";
+import Tickets from "../NewTickets/Tickets";
 
 export default function EventMiddleComponent({ eventTabIndex }) {
 

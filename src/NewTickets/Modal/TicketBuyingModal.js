@@ -3,7 +3,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import TicketIncremental from "./TicketIncremental";
-import '../BuyingInformation.css';
+import '../TicketInformation/BuyingInformation.css';
 import {TicketInformationTypes} from "../TicketInformation/TicketInformationTypes";
 import BuyingInformation from "../TicketInformation/BuyingInformation";
 import './Modal.css'
