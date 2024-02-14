@@ -1,0 +1,55 @@
+.emp-profile{
+    background-color: #fff;
+    margin: 2% auto;
+    border: 1px solid #E9ECEF;
+    border-radius: 5px;
+}
+.emp-header{
+    background-color: #fff;
+    border: 1px solid #E9ECEF;
+    border-radius: 5px;
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    height: 6%;
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 55, 54);
+    text-size-adjust: 100%;
+    line-height: 1.2;
+}
+.emp-text{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 27px;
+    margin: 0 0 14px;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-size-adjust: 100%;
+    color: rgb(52, 69, 99);
+}
+.event-btn{
+    padding: 10px 16px;
+    border-radius: 3px;
+    background: #18A19B;
+    height: 40px ;
+    border: 0;
+    width: 110px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}

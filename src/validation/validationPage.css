@@ -2,20 +2,20 @@
 /*    box-sizing: border-box;*/
 /*}*/
 
-.body{
-    background-image: url("./image2.png");
-    background-size: cover;
-    background-position: center;
-    filter: saturate(1.1);
-    background-repeat: no-repeat;
-    font-family: "Times New Roman", sans-serif;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
-}
+/*.body{*/
+/*    background-image: url("./image2.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    filter: saturate(1.1);*/
+/*    background-repeat: no-repeat;*/
+/*    font-family: "Times New Roman", sans-serif;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    overflow: hidden;*/
+/*    margin: 0;*/
+/*}*/
 
 .container{
     background-color: rgba(255,255,255,0.3);

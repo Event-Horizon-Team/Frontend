@@ -1,21 +1,21 @@
-.Body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("https://www.pixel4k.com/wp-content/uploads/2021/08/nebula-stars-space-4k_1629255910-2048x1257.jpg.webp");
-    animation: bg 10s linear infinite;
-    background-size: cover;
-    background-position: center;
-    filter: saturate(1.1);
-    background-repeat: no-repeat;
+/*.Body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: sans-serif;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    height: 100vh;*/
+/*    width: 100vw;*/
+/*    background-image: url("https://www.pixel4k.com/wp-content/uploads/2021/08/nebula-stars-space-4k_1629255910-2048x1257.jpg.webp");*/
+/*    animation: bg 10s linear infinite;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    filter: saturate(1.1);*/
+/*    background-repeat: no-repeat;*/
 
-}
+/*}*/
 
 .Container {
     background: #fff;
